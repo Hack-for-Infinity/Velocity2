@@ -1,9 +1,16 @@
 # Welcome to Our project
 
 ## Project Title 
-SEE FOR MEE!!
+SEE FOR MEE 👁️
 ## Project info
 **URL**: https://seeformee.lovable.app/
+## Team Members
+|Name|GitHub Username|
+|----|----------------|
+|Nishita patnana|nishita1797-glitch|
+|Rishika Reddy|rishikareddy771|
+|Harini Sri|harinisri2007|
+
 
 
 **Use your preferred IDE**
