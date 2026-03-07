@@ -21,17 +21,20 @@ socially excluded from modern digital culture
 
 ## System Architecture/Design
 User Browser
-   ↓
-React + Tailwind Frontend
-↓
-Supabase Backend
+
+React + Tailwind- Frontend
+
+Supabase- Backend
+
 (Database + Auth + APIs)
-    ↓
+
 AI Services
-(OpenAI Vision / Gemini)
-     ↓  
+
+(OpenAI Vision / Gemini) 
+
 Speech APIs
-(Text-to-Speech + Speech-to-Text)
+
+(Text-to-Speech + Speech-to-Text) LLM's
 ## ⚒️Technologies Used
 *Frontend*
 React
