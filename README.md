@@ -40,7 +40,7 @@ Speech APIs
 React
 TypeScript
 Tailwind CSS
-shadcn/ui
+
 
 *Backend*
 Supabase
