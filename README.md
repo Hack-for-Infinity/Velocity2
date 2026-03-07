@@ -20,19 +20,15 @@ socially excluded from modern digital culture
 
 ## System Architecture/Design
 User Browser
-     │
-     ▼
+   ↓  
 React + Tailwind Frontend
-     │
-     ▼
+    ↓  
 Supabase Backend
 (Database + Auth + APIs)
-     │
-     ▼
+    ↓  
 AI Services
 (OpenAI Vision / Gemini)
-     │
-     ▼
+     ↓  
 Speech APIs
 (Text-to-Speech + Speech-to-Text)
 
