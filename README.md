@@ -18,6 +18,23 @@ they don’t necessarily explain the humour of a meme, the aesthetic of a trendi
 photo, or the cultural context of a viral post, leaving visually impaired users
 socially excluded from modern digital culture
 
+## System Architecture/Design
+User Browser
+     │
+     ▼
+React + Tailwind Frontend
+     │
+     ▼
+Supabase Backend
+(Database + Auth + APIs)
+     │
+     ▼
+AI Services
+(OpenAI Vision / Gemini)
+     │
+     ▼
+Speech APIs
+(Text-to-Speech + Speech-to-Text)
 
 
 **Use your preferred IDE**
