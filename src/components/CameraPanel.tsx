@@ -1,4 +1,4 @@
-import { useRef, useEffect, useCallback } from "react";
+import { useRef, useEffect, useCallback, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Camera, CameraOff, Aperture } from "lucide-react";
 import { useCamera } from "@/hooks/useCamera";
@@ -15,9 +15,11 @@ interface CameraPanelProps {
 export default function CameraPanel({ onCapture, isDisabled, externalStart, externalCapture, onStarted, onCaptured }: CameraPanelProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const { startCamera, stopCamera, captureFrame, isActive, error } = useCamera();
+  const [preview, setPreview] = useState<string | null>(null);
 
   const handleStart = useCallback(async () => {
     if (videoRef.current) {
+      setPreview(null);
       await startCamera(videoRef.current);
       onStarted?.();
     }
@@ -26,10 +28,12 @@ export default function CameraPanel({ onCapture, isDisabled, externalStart, exte
   const handleCapture = useCallback(() => {
     const frame = captureFrame();
     if (frame) {
+      setPreview("data:image/jpeg;base64," + frame);
       onCapture(frame);
       onCaptured?.();
+      stopCamera();
     }
-  }, [captureFrame, onCapture, onCaptured]);
+  }, [captureFrame, onCapture, onCaptured, stopCamera]);
 
   useEffect(() => {
     if (externalStart && !isActive && videoRef.current) {
@@ -60,14 +64,21 @@ export default function CameraPanel({ onCapture, isDisabled, externalStart, exte
       </p>
 
       <div className="relative w-full overflow-hidden rounded-lg bg-secondary aspect-video">
+        {/* Live video feed */}
         <video
           ref={videoRef}
-          className="h-full w-full object-cover"
+          className={`h-full w-full object-cover ${isActive ? "block" : "hidden"}`}
           playsInline
           muted
+          autoPlay
           aria-label="Camera preview"
         />
-        {!isActive && (
+        {/* Captured image preview */}
+        {preview && !isActive && (
+          <img src={preview} alt="Captured preview" className="h-full w-full object-cover" />
+        )}
+        {/* Placeholder when nothing is active */}
+        {!isActive && !preview && (
           <div className="absolute inset-0 flex items-center justify-center">
             <CameraOff className="h-12 w-12 text-muted-foreground" />
           </div>
