@@ -128,16 +128,6 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
 ## How can I deploy this project?
 
 Open [Lovable](https://lovable.dev/projects/a89dddae-4440-4e9c-9990-a71ea4d95897) and click on Share -> Publish.
