@@ -20,18 +20,77 @@ socially excluded from modern digital culture
 
 ## System Architecture/Design
 User Browser
-   ↓  
+   ↓
 React + Tailwind Frontend
-    ↓  
+↓
 Supabase Backend
 (Database + Auth + APIs)
-    ↓  
+    ↓
 AI Services
 (OpenAI Vision / Gemini)
      ↓  
 Speech APIs
 (Text-to-Speech + Speech-to-Text)
+## Technologies Used
+*Frontend*
+React
+TypeScript
+Tailwind CSS
+shadcn/ui
 
+*Backend*
+Supabase
+PostgreSQL
+
+*AI*
+Image analysis models
+vision AI
+
+*Voice*
+Speech recognition
+Text-to-speech
+
+*Tools*
+Vite
+Lucide icons
+GitHub
+
+*Hosting*
+Lovable platform
+
+## Key Features
+AI Image Description
+
+Camera Capture
+
+Image Upload
+
+Image URL Analysis
+
+Meme Explanation
+
+Voice Output (Text-to-Speech)
+
+Voice Commands
+
+Ask Questions About Image
+
+Accessibility-Focused Design
+
+## How it Works
+User can ask the chatbot to capture the image shown (camera, upload, or URL).
+
+AI analyzes the image to detect objects and scene.
+
+AI generates description and meme explanation.
+
+Text-to-Speech converts the result into voice.
+
+User can ask questions about the image using voice.
+
+App responds with spoken answers.
+
+## How to run? 
 
 **Use your preferred IDE**
 
@@ -81,12 +140,8 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/a89dddae-4440-4e9c-9990-a71ea4d95897) and click on Share -> Publish.
+Open [Lovable](https://lovable.dev/projects/a89dddae-4440-4e9c-9990-a71ea4d95897) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
