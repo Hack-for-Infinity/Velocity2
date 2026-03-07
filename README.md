@@ -11,7 +11,7 @@ SEE FOR MEE 👁️
 |Rishika Reddy|rishikareddy771|
 |Harini Sri|harinisri2007|
 
-## Problem Statement
+## ❓ Problem Statement
 PS04 *AI for ability*
 AI image description tools can tell a blind user there is "a dog in a park." But
 they don’t necessarily explain the humour of a meme, the aesthetic of a trending
@@ -31,7 +31,7 @@ AI Services
      ↓  
 Speech APIs
 (Text-to-Speech + Speech-to-Text)
-## Technologies Used
+## ⚒️Technologies Used
 *Frontend*
 React
 TypeScript
@@ -58,7 +58,7 @@ GitHub
 *Hosting*
 Lovable platform
 
-## Key Features
+## ⭐ Key Features
 AI Image Description
 
 Camera Capture
@@ -77,7 +77,7 @@ Ask Questions About Image
 
 Accessibility-Focused Design
 
-## How it Works
+## How it Works ⚙️
 User can ask the chatbot to capture the image shown (camera, upload, or URL).
 
 AI analyzes the image to detect objects and scene.
@@ -90,7 +90,7 @@ User can ask questions about the image using voice.
 
 App responds with spoken answers.
 
-## How to run? 
+## 🚀 How to run? 
 
 **Use your preferred IDE**
 
