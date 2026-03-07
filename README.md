@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/a89dddae-4440-4e9c-9990-a71ea4d95897
+**URL**: https://preview--seeformee.lovable.app/
 
 ## How can I edit this code?
 
@@ -10,7 +10,7 @@ There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a89dddae-4440-4e9c-9990-a71ea4d95897) and start prompting.
+Simply visit the https://preview--seeformee.lovable.app/
 
 Changes made via Lovable will be committed automatically to this repo.
 
